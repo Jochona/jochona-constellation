@@ -26,6 +26,10 @@ _Avoid_: user, account, actor
 A human identity within an Organization. A Member can own multiple independently enrolled Devices.
 _Avoid_: user, account, person record
 
+**Guest**:
+A Member whose access to Host Applications comes only from active Grants, without any Role binding.
+_Avoid_: friend (bare), invited user, limited account
+
 **Service Principal**:
 A non-human identity for approved automation within an Organization.
 _Avoid_: bot user, API user, service account
