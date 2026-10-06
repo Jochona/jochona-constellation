@@ -22,9 +22,10 @@ Research inputs (corrected baseline): `research/capture-encode-bleeding-edge.md`
 | Strict Doxygen clean | host | done |
 | Linux AppImage / Windows / macOS Client builds | client | done |
 | display-adapter driver builds x64 + ARM64, tests green | display-adapter | done |
-| Windows DualSense (DS5) virtual gamepad + adaptive triggers (VHF backend, ViGEm fallback) | host | in progress |
-| Release workflows on `v*` tags, SHA256SUMS, unsigned-binaries notice | all | in progress |
-| Docs updated per repo, install paths verified against real release assets | all | pending |
+| Windows DualSense (DS5) virtual gamepad + adaptive triggers (VHF backend, ViGEm fallback) | host | done |
+| Release workflow on `v*` tags, SHA256SUMS, unsigned-binaries notice | client, display-adapter, beacon | done |
+| Fork-owned release workflow on `v*` tags, SHA256SUMS, unsigned-binaries notice | host | in progress (merged to main; dry-run + throwaway-tag proof pending) |
+| Docs updated per repo, install paths verified against real release assets | all | in progress (host, display-adapter, beacon, constellation done; client docs PR open) |
 | Tag + publish `v1.0.0` | host, client, display-adapter, beacon | pending |
 
 Release rules: cut releases only from committed `main` (no local WIP), all CI green, assets downloaded and smoke-checked
